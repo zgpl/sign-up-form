@@ -1,0 +1,8 @@
+@font-face {
+    font-family: logo-font;
+    src: url('assets/font.otf');
+}
+
+h1 {
+    font-family: logo-font, sans-serif;
+}

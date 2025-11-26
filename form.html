@@ -3,19 +3,59 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>sign-up form</title>
-        <link re="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css">
         <link rel="icon" href="assets/transparent-logo.png">
     </head>
     <body>
-        <img src="assets/sunbird.jpg" alt="sunbird">
-        <img src="assets/transparent-logo.png" alt="watermelon logo">
-        <div>
+        <div class="display-section">
+            <img src="assets/sunbird.jpg" alt="sunbird" width="300" height="300">
+            <img src="assets/transparent-logo.png" alt="watermelon logo" width="300" height="300">
+            <h1>zeina's form</h1>
             <p>
                 Photo by <a href="https://unsplash.com/@davidclode">David Clode</a> on 
                 <a href="https://unsplash.com/photos/macro-photography-of-brown-blue-and-yellow-long-beaked-bird-on-red-petaled-flower-2wqz6oqkTNQ">Unsplash</a>
             </p>
         </div>
-        <form>
-        </form>
+        <div class="form-section">
+            <p>This is not a real online service! 
+                You know you need something like this in your life to help you realise your deepest dreams. 
+                Sign up <i>now</i> to get started.
+                You <i>know</i> you want to.
+            </p>
+            <form>
+                <section>
+                    <h2>Let's do this!</h2>
+                    <p>
+                        <label for="first_name">First Name</label>
+                        <input type="text" id="first_name" name="first_name" required/>
+                    </p>
+                    <p>
+                        <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" name="last_name" required/>
+                    </p>
+                    <p>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required/>
+                    </p>
+                    <p>
+                        <label for="phone_number">Phone Number</label>
+                        <input type="tel" id="phone_number" name="phone_number" required/>
+                    </p>
+                    <p>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required/>
+                    </p>
+                    <p>
+                        <label for="password">Confirm Password</label>
+                        <input type="password" id="password" name="password" required/>
+                    </p>
+                </section>
+                <section>
+                    <button type="submit">Create Account</button>
+                    <p>Already have an account? Log in</p>
+                </section>
+
+            </form>
+        </div>
     </body>
 </html>
