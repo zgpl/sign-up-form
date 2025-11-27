@@ -1,8 +1,43 @@
+body {
+    margin: 0px;
+}
+
 @font-face {
     font-family: logo-font;
     src: url('assets/font.otf');
 }
 
+.webpage {
+    display: flex;
+}
+
 h1 {
     font-family: logo-font, sans-serif;
+}
+
+.sunbird {
+    position: relative;
+}
+
+.logo, .display h1, .display p {
+    position: absolute;
+}
+
+.logo {
+    top: 450px;
+    left: 100px;
+}
+
+.display h1 {
+    top: 460px;
+    left: 200px;
+}
+
+.display p {
+    top: 520px;
+}
+
+.form {
+    margin: 30px;
+    position: relative;
 }
