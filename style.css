@@ -19,22 +19,41 @@ h1 {
     position: relative;
 }
 
-.logo, .display h1, .display p {
+.logo, .title, .image-credit, .black-background {
     position: absolute;
 }
 
 .logo {
-    top: 450px;
+    top: 410px;
     left: 100px;
+    z-index: 2;
 }
 
-.display h1 {
-    top: 460px;
+.title {
+    top: 420px;
     left: 200px;
+    color: yellow;
+    z-index: 2;
 }
 
-.display p {
-    top: 520px;
+.black-background {
+    top: 420px;
+    background-color: black;
+    width: 400px;
+    height: 75px;
+    opacity: 0.3;
+    z-index: 1
+}
+
+.image-credit {
+    top: 530px;
+    left: 30px;
+    color: yellow;
+    font-style: italic;
+}
+
+a:visited {
+    color: inherit;
 }
 
 .form {
