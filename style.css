@@ -60,3 +60,20 @@ a:visited {
     margin: 30px;
     position: relative;
 }
+
+.intro {
+    font-weight: bold;
+}
+
+button {
+    background-color: #fe6c7f;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    font-weight: bold;
+}
+
+input:focus {
+    border-color: lightblue;
+}
+    /* don't forget box shadow/*
