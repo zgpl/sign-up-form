@@ -1,5 +1,7 @@
 body {
     margin: 0px;
+    background-color: #f5f5f5;
+    box-sizing: border-box;
 }
 
 @font-face {
@@ -57,8 +59,17 @@ a:visited {
 }
 
 .form {
-    margin: 30px;
+    /*margin: 30px;*/
     position: relative;
+}
+
+form {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+section.input-section {
+    background-color: white;
 }
 
 .intro {
@@ -70,10 +81,23 @@ button {
     padding: 10px 20px;
     border-radius: 10px;
     border: 1px solid transparent;
-    font-weight: bold;
 }
 
 input:focus {
     border-color: lightblue;
+    box-shadow: 5px 5px 10px grey;
 }
-    /* don't forget box shadow/*
+
+#password:invalid {
+    border-color: #fe6c7f;
+}
+
+section.account-section {
+    margin-top: 16px;
+}
+
+/* to-dos:
+- get the whole bit on the right to match example image lol
+- get the image to fill up the whole bit on the left
+- change the color of 'log in'
+}/*
