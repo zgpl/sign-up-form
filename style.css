@@ -58,7 +58,7 @@ a:visited {
     color: inherit;
 }
 
-.form {
+.right-section {
     /*margin: 30px;*/
     position: relative;
 }
@@ -70,10 +70,13 @@ form {
 
 section.input-section {
     background-color: white;
+    box-shadow: 5px 5px 10px grey;
 }
 
-.intro {
-    font-weight: bold;
+.fields {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
 }
 
 button {
