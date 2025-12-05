@@ -11,72 +11,101 @@ body {
 
 .webpage {
     display: flex;
+    gap: 10px;
 }
 
 h1 {
     font-family: logo-font, sans-serif;
 }
 
-.sunbird {
+.left-hand-column {
     position: relative;
+    width: 70%;
+    height: 100vh;
+    overflow: hidden;
 }
 
-.logo, .title, .image-credit, .black-background {
+.sunbird {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.logo, .title, .image-credit, .image-background, .input-background {
     position: absolute;
 }
 
 .logo {
-    top: 410px;
-    left: 100px;
+    top: 8%;
+    left: 20%;
+    height: auto;
+    width: 30%;
     z-index: 2;
 }
 
 .title {
-    top: 420px;
-    left: 200px;
+    top: 10%;
+    left: 40%;
     color: yellow;
+    font-size: 4vw;
+    margin-left: 10%;
+    text-align: center;
     z-index: 2;
 }
 
-.black-background {
-    top: 420px;
+.image-background {
+    width: 100%;
     background-color: black;
-    width: 400px;
-    height: 75px;
-    opacity: 0.3;
-    z-index: 1
+    opacity: 0.7;
+    top: 10%;
+    height: 15%;
+    z-index: 1;
 }
 
 .image-credit {
-    top: 530px;
-    left: 30px;
+    width: 100%;
     color: yellow;
+    text-align: center;
     font-style: italic;
+    bottom: 0;
+    left: 0;
 }
 
 a:visited {
     color: inherit;
 }
 
-.right-section {
-    /*margin: 30px;*/
+.right-hand-column {
     position: relative;
+    align-self: center;
 }
 
 form {
     display: flex;
     flex-flow: column wrap;
+    gap: 20px;
 }
 
-section.input-section {
+.intro {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/*.input-background {
+    width: 100%;
     background-color: white;
     box-shadow: 5px 5px 10px grey;
-}
+    top: 25%;
+    height: 55%;
+    z-index: 2;
+} */
 
 .fields {
     display: flex;
     flex-flow: row wrap;
     gap: 10px;
+    position: relative;
+    z-index: 3;
 }
 
 button {
@@ -84,6 +113,7 @@ button {
     padding: 10px 20px;
     border-radius: 10px;
     border: 1px solid transparent;
+    font-weight: bold;
 }
 
 input:focus {
@@ -99,8 +129,13 @@ section.account-section {
     margin-top: 16px;
 }
 
+.log-in {
+    font-weight: bold;
+    color: #fe6c7f;
+    text-decoration: none;
+}
+
 /* to-dos:
-- get the whole bit on the right to match example image lol
-- get the image to fill up the whole bit on the left
-- change the color of 'log in'
+- gap between left and right
+- get the white bit to extend horizontally
 }/*
