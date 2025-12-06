@@ -11,7 +11,6 @@ body {
 
 .webpage {
     display: flex;
-    gap: 10px;
 }
 
 h1 {
@@ -31,21 +30,9 @@ h1 {
     object-fit: cover;
 }
 
-.logo, .title, .image-credit, .image-background, .input-background {
-    position: absolute;
-}
-
-.logo {
-    top: 8%;
-    left: 20%;
-    height: auto;
-    width: 30%;
-    z-index: 2;
-}
-
 .title {
+    position: absolute;
     top: 10%;
-    left: 40%;
     color: yellow;
     font-size: 4vw;
     margin-left: 10%;
@@ -54,6 +41,7 @@ h1 {
 }
 
 .image-background {
+    position: absolute;
     width: 100%;
     background-color: black;
     opacity: 0.7;
@@ -63,6 +51,7 @@ h1 {
 }
 
 .image-credit {
+    position: absolute;
     width: 100%;
     color: yellow;
     text-align: center;
@@ -88,24 +77,20 @@ form {
 
 .intro {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
+    padding: 10px 80px;
 }
 
-/*.input-background {
-    width: 100%;
-    background-color: white;
-    box-shadow: 5px 5px 10px grey;
-    top: 25%;
-    height: 55%;
-    z-index: 2;
-} */
+.input-section {
+    background: white;
+    position: relative;
+    padding: 10px 80px;
+}
 
 .fields {
     display: flex;
     flex-flow: row wrap;
-    gap: 10px;
-    position: relative;
-    z-index: 3;
+    gap: 20px;
 }
 
 button {
@@ -127,6 +112,7 @@ input:focus {
 
 section.account-section {
     margin-top: 16px;
+    padding-left: 40px;
 }
 
 .log-in {
@@ -134,8 +120,3 @@ section.account-section {
     color: #fe6c7f;
     text-decoration: none;
 }
-
-/* to-dos:
-- gap between left and right
-- get the white bit to extend horizontally
-}/*
